@@ -1,6 +1,8 @@
-import ttl.util.spark.udf._
+import tal.util.spark.udf._
+
 import org.apache.spark.sql._
 import org.apache.spark.sql.types._
+import tal.util.spark.udf.CombineMaps
 
 object TestSparkCombinMaps {
   def main(args: Array[String]): Unit = {

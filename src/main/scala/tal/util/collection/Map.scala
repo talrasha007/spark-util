@@ -1,4 +1,4 @@
-package ttl.util.collection
+package tal.util.collection
 
 object Map {
   implicit class Combine[K, V](m: scala.collection.Map[K, V]) {

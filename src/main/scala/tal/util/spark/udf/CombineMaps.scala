@@ -1,10 +1,10 @@
-package ttl.util.spark.udf
+package tal.util.spark.udf
 
 import org.apache.spark.sql.expressions.{MutableAggregationBuffer, UserDefinedAggregateFunction}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.Row
 
-import ttl.util.collection.Map._
+import tal.util.collection.Map._
 
 class CombineMaps[K, V](keyType: DataType, valueType: DataType, merge: (V, V) => V) extends UserDefinedAggregateFunction {
   override def inputSchema: StructType = new StructType().add("map", dataType)

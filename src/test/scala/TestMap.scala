@@ -1,4 +1,4 @@
-import ttl.util.collection.Map._
+import tal.util.collection.Map._
 
 object TestMap {
   def main(args: Array[String]): Unit = {
